@@ -5,8 +5,11 @@ import Skeleton from "@/components/common/Skeleton";
 interface SkillsItem {
   technical: {
     frontend: string[];
-    backend: string[];
-    mobile: string[];
+    // 2025.06.11. 장규호 - 자료형이 일치하지 않아서 변경
+    // 추가 data, 제거 backend & mobile
+    data: string[];
+    // backend: string[];
+    // mobile: string[];
     tools: string[];
   };
   soft: string[];

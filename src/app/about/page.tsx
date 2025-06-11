@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import Certification from "@/components/about/Certification";
 import Education from "@/components/about/Education";
-import Profile from "@/components/about/Profile";
+// 2025.06.11. 장규호 - 사용하지 않는 컴포넌트 주석처리
+// import Profile from "@/components/about/Profile";
 import Skills from "@/components/about/Skills";
 import Career from "@/components/about/Career";
 import Line from "@/components/common/Line";
@@ -13,7 +14,8 @@ import { fetchCareerData } from "@/lib/apiList";
 import {
   certificationList,
   educationList,
-  profile,
+  // 2025.06.11. 장규호 - 사용하지 않는 변수 주석처리
+  // profile,
   skillsList,
 } from "@/store/store";
 import Introduction from "@/components/career/Introduction";

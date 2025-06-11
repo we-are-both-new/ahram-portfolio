@@ -11,6 +11,7 @@ export default function Home() {
 
   const selectedItem = galleryList.find((item) => item.id === selectedId);
 
+  // 2025.06.11. 장규호 - 특수문자 ' 를 &apos; 로 대체
   return (
     <section id="home" className="my-10 md:my-16">
       <h1 className="mb-8 text-2xl font-medium tracking-tighter">
@@ -21,9 +22,9 @@ export default function Home() {
       <div className="introduction space-y-4 leading-relaxed text-gray-700 dark:text-gray-300 text-base">
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          industry. Lorem Ipsum has been the industry&apos;s standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book.
         </p>
         <p>
           It has survived not only five centuries, but also the leap into
@@ -37,8 +38,8 @@ export default function Home() {
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout. The point of
           using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English.
+          letters, as opposed to using &apos;Content here, content here&apos;,
+          making it look like readable English.
         </p>
       </div>
 
@@ -65,7 +66,7 @@ export default function Home() {
               sizes="(max-width: 768px) 213px, 33vw"
               className={`grayscale transition duration-300 hover:grayscale-0 rounded-lg object-cover ${
                 {
-                  2: "sm:object-top sm:object-center",
+                  2: "sm:object-center",
                   4: "sm:object-center",
                 }[item.id] || ""
               }`}
