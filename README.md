@@ -65,9 +65,9 @@ npm run start
 
 - 모바일, 태블릿, 데스크톱 등 다양한 화면 크기에 맞춰 UI가 자동으로 조정됩니다. `Tailwind CSS`를 사용해 빠르게 반응형 디자인을 구현하고, 화면 크기에 따라 레이아웃, 글자 크기, 이미지 크기를 동적으로 조정하여 최적의 사용자 경험을 제공합니다. 또한, 모바일 화면에서는 간결하고 직관적인 헤더 디자인을 적용하여 작은 화면에서도 메뉴와 네비게이션을 쉽게 이용할 수 있도록 최적화했습니다.
 
-| Desktop                                                        | Tablet                                            | Mobile                                             |
-| -------------------------------------------------------------- | ------------------------------------------------- | -------------------------------------------------- |
-| ![Desktop Image](/public/images/readme/light_desktop_main.png) | ![Tablet Image](/public/images/readme/tablet.png) | ![Mobile Image](/public/images/readme/mobile1.png) |
+| Desktop                                                        | Tablet                                            | Mobile                                              |
+| -------------------------------------------------------------- | ------------------------------------------------- | --------------------------------------------------- |
+| ![Desktop Image](/public/images/readme/light-desktop-main.png) | ![Tablet Image](/public/images/readme/tablet.png) | ![Mobile Image](/public/images/readme/mobile-1.png) |
 
 ### 2. **다크 모드 지원**
 
@@ -75,7 +75,7 @@ npm run start
 
 | Light Mode                                                     | Dark Mode                                             |
 | -------------------------------------------------------------- | ----------------------------------------------------- |
-| ![Desktop Image](/public/images/readme/light_desktop_main.png) | ![Desktop Image](/public/images/readme/dark_mode.png) |
+| ![Desktop Image](/public/images/readme/light-desktop_main.png) | ![Desktop Image](/public/images/readme/dark-mode.png) |
 
 ### 3. **다국어 지원** (개발 진행중)
 
@@ -85,11 +85,11 @@ npm run start
 
 - `Notion API`를 사용하여 Notion에서 관리하는 콘텐츠를 실시간으로 불러와 사이트에 표시합니다. 커리어나 사이드 프로젝트 등 다양한 콘텐츠를 손쉽게 관리할 수 있습니다. 데이터는 `@notionhq/client`를 사용해 API 요청을 보내고 받아옵니다.
 
-| Page                                                                  | Notion DB                                                     |
-| --------------------------------------------------------------------- | ------------------------------------------------------------- |
-| ![CareerList](/public/images/readme/CareerScreen.png)                 | ![CareerList](/public/images/readme/CareerDB.PNG)             |
-| ![CareerProjectScreen](/public/images/readme/CareerProjectScreen.png) | ![CareerProjectDB](/public/images/readme/CareerProjectDB.PNG) |
-| ![SideProjectScreen](/public/images/readme/SideProjectScreen.png)     | ![SideProjectDB](/public/images/readme/SideProjectDB.PNG)     |
+| Page                                                                    | Notion DB                                                       |
+| ----------------------------------------------------------------------- | --------------------------------------------------------------- |
+| ![CareerList](/public/images/readme/career-screen.png)                  | ![CareerList](/public/images/readme/career-db.png)              |
+| ![CareerProjectScreen](/public/images/readme/career-project-screen.png) | ![CareerProjectDB](/public/images/readme/career-project-db.png) |
+| ![SideProjectScreen](/public/images/readme/side-project-screen.png)     | ![SideProjectDB](/public/images/readme/side-project-db.png)     |
 
 ### 5. **애니메이션 효과**
 
