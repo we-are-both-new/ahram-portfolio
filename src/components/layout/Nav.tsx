@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { motion } from "motion/react";
 import { usePathname } from "next/navigation";
 import { navList } from "@/store/store";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -27,19 +28,30 @@ const Nav: React.FC<NavProps> = ({ isOpen, setIsOpen }) => {
 
       {/* Desktop Navigation */}
       <div className="hidden md:flex flex-row space-x-0 gap-4">
-        {Object.entries(navList).map(([path, { name }]) => {
+        {Object.entries(navList).map(([path, { name }], index) => {
           return (
-            <Link
+            <motion.div
+              className="px-1"
               key={path}
-              href={path}
-              className={`${
-                router === path
-                  ? "font-extrabold underline underline-offset-4"
-                  : ""
-              } transition-all flex align-middle relative py-1`}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.9 }}
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                transition: { duration: 2, delay: index * 0.2 },
+              }}
             >
-              {name}
-            </Link>
+              <Link
+                href={path}
+                className={`${
+                  router === path
+                    ? "font-extrabold underline underline-offset-4"
+                    : ""
+                } transition-all flex align-middle relative py-1`}
+              >
+                {name}
+              </Link>
+            </motion.div>
           );
         })}
       </div>
